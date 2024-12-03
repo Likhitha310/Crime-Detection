@@ -9,7 +9,7 @@ import time
 from datetime import datetime
 
 # Initialize the Telegram bot with your bot's API token
-bot = telepot.Bot('6679358098:AAFmpDc7o4MwqDywDahyAK0Qq89IVZqNr04')  # Replace 'YOUR_BOT_API_TOKEN' with your actual token
+bot = telepot.Bot('')  # Replace 'YOUR_BOT_API_TOKEN' with your actual token
 
 def save_annotated_video(input_video, output_video, telegram_group_id):
     print("Loading model ...")
@@ -91,5 +91,5 @@ def save_annotated_video(input_video, output_video, telegram_group_id):
 
 input_video_file = 0
 output_video_file = 'annotated_video.avi'  # Choose the output video format based on your preference
-telegram_group_id = '-949413618'  # Replace with your Telegram group ID
+telegram_group_id = ''  # Replace with your Telegram group ID
 save_annotated_video(input_video_file, output_video_file, telegram_group_id)
