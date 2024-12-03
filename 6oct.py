@@ -6,7 +6,7 @@ import telepot
 from datetime import datetime
 import os
 
-bot = telepot.Bot('6679358098:AAFmpDc7o4MwqDywDahyAK0Qq89IVZqNr04')
+bot = telepot.Bot('token')
 
 def save_annotated_video(input_video, telegram_group_id, output_video_path):
     print("Loading model ...")
@@ -67,7 +67,7 @@ def send_video_to_telegram(telegram_group_id, output_video_path):
 
 if __name__ == "__main__":
     input_video = 'WV112.mp4'
-    telegram_group_id = '-949413618'  
+    telegram_group_id = ''  
     output_video_path = 'annotated_video.avi'  
 
     save_annotated_video(input_video, telegram_group_id, output_video_path)
