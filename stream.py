@@ -8,7 +8,7 @@ from keras.models import load_model
 import telepot
 import os
 
-bot = telepot.Bot('8197726841:AAHnxQNnP_6EVkhvSxk_45N4T30RDfPmdJA')  
+bot = telepot.Bot('telegram-api')  
 
 # Ensure the upload folder exists
 UPLOAD_FOLDER = 'uploaded_videos'
@@ -104,7 +104,7 @@ source_option = st.radio(
     options=["Webcam", "Upload a Video"]
 )
 
-telegram_group_id = st.text_input("Telegram Group ID", "1188696687")
+telegram_group_id = st.text_input("Telegram Group ID", "actual-id")
 
 if source_option == "Webcam":
     if st.button("Start Detection"):
