@@ -7,7 +7,7 @@ import time
 from datetime import datetime
 import os
 
-bot = telepot.Bot('6679358098:AAFmpDc7o4MwqDywDahyAK0Qq89IVZqNr04')  
+bot = telepot.Bot('token')  
 
 def save_annotated_frame(input_video, telegram_group_id):
     print("Loading model ...")
@@ -79,7 +79,7 @@ def send_frame_to_telegram(frame_image, telegram_group_id):
 
 if __name__ == "__main__":
     input_video = 'WV82.mp4 ' 
-    telegram_group_id = '-949413618' 
+    telegram_group_id = '' 
     frame_image = save_annotated_frame(input_video, telegram_group_id)
     
     if frame_image is not None:
