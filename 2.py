@@ -85,5 +85,5 @@ def save_annotated_video(input_video, output_video, telegram_group_id):
 
 input_video_file = 'V68.mp4'
 output_video_file = 'annotated_video.avi'  # Choose the output video format based on your preference
-telegram_group_id = '-949413618'  # Replace with your Telegram group ID
+telegram_group_id = 'Telegram_ID'  # Replace with your Telegram group ID
 save_annotated_video(input_video_file, output_video_file, telegram_group_id)
